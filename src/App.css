@@ -1,38 +1,200 @@
-.App {
-  text-align: center;
+* {
+	padding: 0%;
+	margin: 0%;
+	box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.page_container {
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* CHECK BOX STYLING START */
+/* The container */
+.container-checkbox {
+	display: block;
+	position: relative;
+	padding-left: 36px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Hide the browser's default checkbox */
+.container-checkbox input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+/* Create a custom checkbox */
+.container-checkbox .checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	border: 2px solid #000;
+	border-radius: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* On mouse-over, add a grey background color */
+.container-checkbox:hover input ~ .checkmark {
+	border-radius: 50%;
 }
+
+/* When the checkbox is checked, add a blue background */
+.container-checkbox input:checked ~ .checkmark {
+	background-color: #8ee186;
+	border-radius: 50%;
+	border: none;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.container-checkbox .checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+/* Show the checkmark when checked */
+.container-checkbox input:checked ~ .checkmark:after {
+	display: block;
+}
+
+/* Style the checkmark/indicator */
+.container-checkbox .checkmark:after {
+	left: 9px;
+	top: 5px;
+	width: 7px;
+	height: 12px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	transform: rotate(45deg);
+}
+/* CHECK BOX STYLING END */
+
+/* HEADER  STYLING START */
+.horseIcon {
+	height: 24px;
+	width: 24px;
+}
+
+.horseIcon2 {
+	height: 34px;
+	width: 34px;
+}
+
+.fontChange {
+	font-size: 1.1rem;
+}
+
+.upperHeadings {
+	letter-spacing: 2px;
+}
+/* HEADER STYLING END */
+
+/* TABLE STYLING START */
+.height70 {
+  height: 80px;
+}
+
+.tableHeading {
+	letter-spacing: 2px;
+	background-color: #eeeeee !important;
+}
+
+.normalSpacing {
+	letter-spacing: 2px;
+}
+
+.backTime,
+.redTime {
+	letter-spacing: 2px;
+	color: #fff;
+	width: 85px;
+	border-radius: 6px;
+	text-align: center;
+	font-weight: 600;
+	padding: 0.1rem 0rem;
+}
+
+.redTime {
+	background: #d33c24;
+}
+.backTime {
+	background: #000;
+}
+
+.meetingTime {
+	line-height: 18px;
+}
+
+.boldText {
+	font-weight: 500;
+}
+
+.textOrange, .textGreen, .textBlue {  letter-spacing: 2.2px;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.textOrange {
+  color: #ea985d;
+}
+
+.textGreen {
+color: #91d66a;
+}
+
+.textBlue {
+  color: #5875eb;
+}
+
+.arrowCont{
+border: 2px solid #fff;
+    padding: 0.2rem 0.2rem;
+    border-radius: 50%;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.orangeBg, .blueBg, .greenBg {
+  border-radius: 50px;
+  color: #fff;
+  width: 202px;
+  margin-left: auto;
+}
+
+.orangeBg h6, .blueBg h6, .greenBg h6 {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.orangeBg{
+background: rgb(217,93,74);
+background: linear-gradient(90deg, rgba(217,93,74,1) 14%, rgba(228,134,54,1) 71%);}
+
+.blueBg{
+background: rgb(133,108,167);
+background: linear-gradient(90deg, rgba(133,108,167,1) 14%, rgba(94,193,232,1) 71%);}
+
+.greenBg{
+background: rgb(160,202,111);
+background: linear-gradient(90deg, rgba(160,202,111,1) 14%, rgba(85,163,186,1) 71%);}
+
+.tableIcon {
+    left: 0%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* .sliderContainer {
+  #e3e5e6
+} */
+/* TABLE STYLING END */
