@@ -3,6 +3,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { GiHorseHead } from "react-icons/gi";
 import { FaHorseHead } from "react-icons/fa";
+import { TiArrowSortedUp, TiArrowSortedDown } from "react-icons/ti";
 import { FcLock } from "react-icons/fc";
 import { RiArrowRightSLine } from "react-icons/ri";
 import horseIcon from "./assets/hore.svg";
@@ -157,23 +158,47 @@ class App extends Component {
               <thead>
                 <tr>
                   <th className="border-0 text-uppercase tableHeading">
-                    start time
+                    <div className="d-flex align-items-center">
+                      start time
+                      <div className="upDownIcon d-flex flex-column ms-1">
+                        <TiArrowSortedUp className="icon" />
+                        <TiArrowSortedDown className="icon" color="#ccc" />
+                      </div>
+                    </div>
                   </th>
                   <th className="border-0 text-uppercase tableHeading text-center">
-                    meeting name
+                    <div className="d-flex justify-content-center align-items-center">
+                      meeting name
+                      <div className="upDownIcon d-flex flex-column ms-1">
+                        <TiArrowSortedUp className="icon" />
+                        <TiArrowSortedDown className="icon" color="#ccc" />
+                      </div>
+                    </div>
                   </th>
                   <th className="border-0 text-uppercase tableHeading text-center">
-                    edge%:
+                    <div className="d-flex justify-content-center align-items-center">
+                      edge%:
+                      <div className="upDownIcon d-flex flex-column ms-1">
+                        <TiArrowSortedUp className="icon" />
+                        <TiArrowSortedDown className="icon" color="#ccc" />
+                      </div>
+                    </div>
                   </th>
                   <th className="border-0 text-uppercase tableHeading text-end">
-                    stake:
+                    <div className="d-flex justify-content-end align-items-center">
+                      stake:
+                      <div className="upDownIcon d-flex flex-column ms-1">
+                        <TiArrowSortedUp className="icon" />
+                        <TiArrowSortedDown className="icon" color="#ccc" />
+                      </div>
+                    </div>
                   </th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td className="height70 align-middle">
-                    <div className="redTime align-middle">2m 54s</div>
+                    <div className="redTime align-middle ms-3">2m 54s</div>
                   </td>
                   <td className="height70 align-middle meetingTime text-center position-relative">
                     <div>
@@ -215,7 +240,7 @@ class App extends Component {
                 </tr>
                 <tr>
                   <td className="height70 align-middle">
-                    <div className="backTime">12m</div>
+                    <div className="backTime ms-3">12m</div>
                   </td>
                   <td className="height70 align-middle meetingTime text-center position-relative">
                     <div>
@@ -262,7 +287,7 @@ class App extends Component {
                 </tr>
                 <tr>
                   <td className="height70 align-middle">
-                    <div className="backTime">15m</div>
+                    <div className="backTime ms-3">15m</div>
                   </td>
                   <td className="height70 align-middle meetingTime text-center position-relative">
                     <div>
@@ -309,7 +334,7 @@ class App extends Component {
                 </tr>
                 <tr>
                   <td className="height70 align-middle height70 align-middle">
-                    <div className="backTime">12m</div>
+                    <div className="backTime ms-3">12m</div>
                   </td>
                   <td className="height70 align-middle meetingTime text-center position-relative">
                     <div>

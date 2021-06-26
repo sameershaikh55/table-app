@@ -241,6 +241,9 @@ background: linear-gradient(90deg, rgba(160,202,111,1) 14%, rgba(85,163,186,1) 7
 .sliderContainer .rangeslider .rangeslider__handle-tooltip span  {
 	margin-top: 8px;
 }
+.upDownIcon .icon:nth-child(1) {
+	margin-bottom: -6px;
+}
 	
 /* .sliderContainer .MuiSlider-rail {
 	background-color: #a5a5a5 !important;
