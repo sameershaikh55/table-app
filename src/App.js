@@ -92,51 +92,55 @@ class App extends Component {
       <div className="page_container mt-5">
         <div className="container-fluid">
           {/* UPPER HEADER START */}
-          <div className="d-flex justify-content-between align-items-center py-2">
-            <div className="d-flex align-items-center w-100">
+          <div className="d-flex flex-column flex-xl-row justify-content-xl-between align-items-xl-center py-2">
+            <div className="d-flex flex-column flex-md-row align-items-md-center w-100">
               <h6 className="me-3 mb-0 upperHeadings fw-bold">
                 EDGE SETTINGS:
               </h6>
-              <div className="d-flex">
-                <div>
-                  <label className="d-flex align-items-center container-checkbox">
-                    <GiHorseHead fontSize="1.4rem" />
-                    <input type="checkbox" defaultChecked />
-                    <span className="checkmark"></span>
-                  </label>
+              <div className="d-flex flex-column flex-sm-row mt-3 mt-md-0">
+                <div className="d-flex">
+                  <div>
+                    <label className="d-flex align-items-center container-checkbox">
+                      <GiHorseHead fontSize="1.4rem" />
+                      <input type="checkbox" defaultChecked />
+                      <span className="checkmark"></span>
+                    </label>
+                  </div>
+                  <div className="ms-2">
+                    <label className="d-flex align-items-center container-checkbox">
+                      <FaHorseHead fontSize="1.4rem" />
+                      <input type="checkbox" defaultChecked />
+                      <span className="checkmark"></span>
+                    </label>
+                  </div>
+                  <div className="ms-2">
+                    <label className="d-flex align-items-center container-checkbox">
+                      <img className="horseIcon" src={horseIcon} alt="" />
+                      <input type="checkbox" defaultChecked />
+                      <span className="checkmark"></span>
+                    </label>
+                  </div>
                 </div>
-                <div className="ms-2">
-                  <label className="d-flex align-items-center container-checkbox">
-                    <FaHorseHead fontSize="1.4rem" />
-                    <input type="checkbox" defaultChecked />
-                    <span className="checkmark"></span>
-                  </label>
-                </div>
-                <div className="ms-2">
-                  <label className="d-flex align-items-center container-checkbox">
-                    <img className="horseIcon" src={horseIcon} alt="" />
-                    <input type="checkbox" defaultChecked />
-                    <span className="checkmark"></span>
-                  </label>
-                </div>
-                <div className="ms-2">
-                  <label className="d-flex align-items-center container-checkbox fontChange">
-                    Aus/NZ
-                    <input type="checkbox" defaultChecked />
-                    <span className="checkmark"></span>
-                  </label>
-                </div>
-                <div className="ms-2">
-                  <label className="d-flex align-items-center container-checkbox fontChange">
-                    Int'l
-                    <input type="checkbox" />
-                    <span className="checkmark"></span>
-                  </label>
+                <div className="d-flex mt-3 mt-sm-0">
+                  <div className="ms-0 ms-sm-2">
+                    <label className="d-flex align-items-center container-checkbox fontChange">
+                      Aus/NZ
+                      <input type="checkbox" defaultChecked />
+                      <span className="checkmark"></span>
+                    </label>
+                  </div>
+                  <div className="ms-2">
+                    <label className="d-flex align-items-center container-checkbox fontChange">
+                      Int'l
+                      <input type="checkbox" />
+                      <span className="checkmark"></span>
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="d-flex flex-row-reverse align-items-center w-100">
-              <div className="sliderContainer mt-1">
+            <div className="d-flex flex-column-reverse flex-md-row-reverse justify-content-end justify-content-xl-start align-items-start align-items-md-center w-100">
+              <div className="sliderContainer mt-0 mt-md-1">
                 <Slider
                   min={0}
                   max={100}
@@ -147,13 +151,15 @@ class App extends Component {
                   onChange={this.handleChangeHorizontal}
                 />
               </div>
-              <h6 className="upperHeadings fw-bold mb-0 me-2">EDGE FILTER:</h6>
+              <h6 className="upperHeadings fw-bold mb-0 me-3 me-xl-1 mt-4 mt-md-0">
+                EDGE FILTER:
+              </h6>
             </div>
           </div>
           {/* UPPER HEADER END */}
 
           {/* TABLE START */}
-          <div>
+          <div className="tableContainer">
             <table className="table">
               <thead>
                 <tr>
