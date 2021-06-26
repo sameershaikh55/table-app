@@ -10,60 +10,6 @@ import horseIcon from "./assets/hore.svg";
 import Slider from "react-rangeslider";
 import "react-rangeslider/lib/index.css";
 
-// import PropTypes from "prop-types";
-// import { withStyles } from "@material-ui/core/styles";
-// import Slider from "@material-ui/core/Slider";
-// import Tooltip from "@material-ui/core/Tooltip";
-
-// function ValueLabelComponent(props) {
-//   const { children, open, value } = props;
-
-//   return (
-//     <Tooltip open={open} enterTouchDelay={0} placement="top" title={value}>
-//       {children}
-//     </Tooltip>
-//   );
-// }
-
-// ValueLabelComponent.propTypes = {
-//   children: PropTypes.element.isRequired,
-//   open: PropTypes.bool.isRequired,
-//   value: PropTypes.number.isRequired,
-// };
-
-// const PrettoSlider = withStyles({
-//   root: {
-//     color: "red",
-//     height: 8,
-//   },
-//   thumb: {
-//     height: 24,
-//     width: 24,
-//     backgroundColor: "#000",
-//     border: "2px solid currentColor",
-//     marginTop: -8,
-//     marginLeft: -12,
-//     "&:focus, &:hover, &$active": {
-//       boxShadow: "inherit",
-//     },
-//     "&::before": {
-//       content: "lol",
-//     },
-//   },
-//   active: {},
-//   valueLabel: {
-//     left: "calc(-50% + 4px)",
-//   },
-//   track: {
-//     height: 8,
-//     borderRadius: 4,
-//   },
-//   rail: {
-//     height: 8,
-//     borderRadius: 4,
-//   },
-// })(Slider);
-
 class App extends Component {
   constructor(props, context) {
     super(props, context);
@@ -228,7 +174,7 @@ class App extends Component {
                   <td className="height70 align-middle text-center textOrange">
                     +10.5%
                   </td>
-                  <td className="height70 align-middle text-end">
+                  <td className="height70 align-middle text-end position-relative">
                     <div className="orangeBg px-2 py-1 d-flex flex-row-reverse align-items-center">
                       <div className="arrowCont">
                         <RiArrowRightSLine color="#fff" />
@@ -241,6 +187,12 @@ class App extends Component {
                           1.5U @ 2.50
                         </p>
                       </div>
+                    </div>
+                    <div className="tableLogoCont position-absolute">
+                      <img
+                        src="https://www.sportsbetting.com.au/assets/images/logonew.jpg"
+                        alt="logo"
+                      />
                     </div>
                   </td>
                 </tr>

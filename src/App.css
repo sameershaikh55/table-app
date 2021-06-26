@@ -150,7 +150,7 @@ html {
 
 
 .tableContainer table {
-	min-width: 1100px;
+	min-width: 1040px;
 	margin-bottom: 0px;
 }
 
@@ -335,5 +335,15 @@ background: linear-gradient(90deg, rgba(160,202,111,1) 14%, rgba(85,163,186,1) 7
 }
 .upDownIcon .icon:nth-child(1) {
 	margin-bottom: -6px;
+}
+
+.tableLogoCont{
+	left: -5%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.tableLogoCont img{
+	width: 140px;
 }
 /* TABLE STYLING END */
